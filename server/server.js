@@ -7,7 +7,11 @@ const { GridFSBucket } = require("mongodb");
 const { Readable } = require("stream");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://video-stream-backend-two.vercel.app/", // Replace with your frontend URL
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true 
+}));
 app.use(express.json());
 
 const mongoURI = process.env.MONGO_URI; // Using environment variable for security
