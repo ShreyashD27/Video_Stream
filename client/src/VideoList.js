@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://video-stream-backend-two.vercel.app/";
 
 function VideoList() {
   const [videos, setVideos] = useState([]);
