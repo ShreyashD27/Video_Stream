@@ -8,7 +8,7 @@ const { Readable } = require("stream");
 
 const app = express();
 app.use(cors({
-  origin: "https://video-stream-backend-two.vercel.app/", // Replace with your frontend URL
+  origin: "https://video-stream-frontend-drab.vercel.app/", // Replace with your frontend URL
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true 
 }));
